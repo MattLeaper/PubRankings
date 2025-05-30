@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+<link rel="stylesheet" href="styles.css" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shakespears - Sheffield Pubs</title>
+</head>
+<body>
+  <main>
+    <h1><span class="emoji" aria="pen emoji">🖊️</span>Shakespears<span class="emoji" aria="skull emoji">💀</span></h1>
+    <p>Traditional pub with a beer garden, for regular live music plus interesting real ales and beers.</p>
+    <img src="shakespears.jpg" alt="Shakespears Pub" />
+    <p><strong>Address:</strong>146-148 Gibraltar St, Sheffield S3 8UB</p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5422.194901912298!2d-1.4741383875573928!3d53.38676017158324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4879787ea11961f3%3A0xa50d4f7b2b4a22d6!2sShakespeare&#39;s!5e1!3m2!1sen!2suk!4v1748609186514!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <p><a href="index.html">← Back to Top Pubs</a></p>
+  </main>
+</body>
+<script>
+  document.querySelectorAll('.emoji').forEach(emoji => {
+    emoji.addEventListener('mouseenter', () => {
+      emoji.style.animation = 'none';
+      emoji.offsetHeight; // force reflow
+      emoji.style.animation = 'shake 1s ease-in-out 2';
+    });
+  });
+
+</script>
+</html>

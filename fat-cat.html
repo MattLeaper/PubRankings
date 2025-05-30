@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <title>The Fat Cat - Sheffield Pubs</title>
+</head>
+<body>
+  <main>
+    <h1><span class="emoji" aria="cat emoji">🐈</span>The Fat Cat<span class="emoji" aria="cat emoji">🐈</span></h1>
+    <p>Victorian pub with wood panel bar and walled garden, acclaimed for its real ales brewed on site.</p>
+    <img src="fat_cat.jpg" alt="The Fat Cat Pub" />
+    <p><strong>Address:</strong> 23 Alma St, Sheffield S3 8SA</p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5421.961566761742!2d-1.474375587557308!3d53.38859217144609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4879787c6c18d507%3A0x3c62c4dd6438028b!2sThe%20Fat%20Cat!5e1!3m2!1sen!2suk!4v1748609305787!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <p><a href="index.html">← Back to Top Pubs</a></p>
+  </main>
+</body>
+<script>
+  document.querySelectorAll('.emoji').forEach(emoji => {
+    emoji.addEventListener('mouseenter', () => {
+      emoji.style.animation = 'none';
+      emoji.offsetHeight; // force reflow
+      emoji.style.animation = 'shake 1s ease-in-out 2';
+    });
+  });
+
+</script>
+</html>

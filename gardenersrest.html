@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <title>Gardeners Rest - Sheffield Pubs</title>
+</head>
+<body>
+  <main>
+    <h1><span class="emoji" aria="flower emoji">🌾</span>Gardeners Rest<span class="emoji" aria="flower emoji">🌷</span></h1>
+    <p>Owned by community members, this easygoing pub hosts live music & offers pints.</p>
+    <img src="gardeners_rest.jpg" alt="Gardeners Rest Pub" />
+    <p><strong>Address:</strong> 105 Neepsend Lane, Sheffield S3 8AT</p>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2710.6776494118085!2d-1.4785809999999997!3d53.393352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4879788814ea939d%3A0x28681a2a469ea025!2sThe%20Gardeners%20Rest!5e1!3m2!1sen!2suk!4v1683961630341!5m2!1sen!2suk"
+      width="600"
+      height="450"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+
+    <p><a href="index.html">← Back to Top Pubs</a></p>
+  </main>
+</body>
+<script>
+  document.querySelectorAll('.emoji').forEach(emoji => {
+    emoji.addEventListener('mouseenter', () => {
+      emoji.style.animation = 'none';
+      emoji.offsetHeight; // force reflow
+      emoji.style.animation = 'shake 1s ease-in-out 2';
+    });
+  });
+
+</script>
+</html>
