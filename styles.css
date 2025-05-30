@@ -101,3 +101,22 @@ h2 {
   font-weight: 600;
   color: #4a4a4a;
 }
+
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .pub-list li {
+    padding: 0.75rem;
+  }
+
+  iframe {
+    height: 400px;
+  }
+
+  .emoji {
+    font-size: 1.5rem;
+  }
+}
