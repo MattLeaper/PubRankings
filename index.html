@@ -32,44 +32,33 @@ referrerpolicy="no-referrer-when-downgrade">
 </div>
   <main class="top5">
     <h2>Top 5 Sheffield Pubs</h2>
-<ul class="pub-list">
-  <li>
-    <button class="collapsible">Gardeners Rest</button>
-    <div class="pub-details">
-      <p>Owned by community members, this easygoing pub hosts live music & offers pints.</p>
-      <a href="gardenersrest.html" aria-label="Details for Gardeners Rest">Details</a>
-    </div>
-  </li>
-  <li>
-    <button class="collapsible">Shakespears</button>
-    <div class="pub-details">
-      <p>Traditional pub with a beer garden, for regular live music plus interesting real ales and beers.</p>
-      <a href="shakespears.html" aria-label="Details for Shakespears">Details</a>
-    </div>
-  </li>
-  <li>
-    <button class="collapsible">The Blake Hotel</button>
-    <div class="pub-details">
-      <p>This community pub reopened as a free house in 2010 after seven years of closure. Extensively restored, it has many Victorian features.</p>
-      <a href="blake-hotel.html" aria-label="Details for The Blake Hotel">Details</a>
-    </div>
-  </li>
-  <li>
-    <button class="collapsible">Kelham Island Tavern</button>
-    <div class="pub-details">
-      <p>Pub with carved wooden bar, tiled floors, leafy beer garden and renowned range of real ales.</p>
-      <a href="kelham-island-tavern.html" aria-label="Details for Kelham Island Tavern">Details</a>
-    </div>
-  </li>
-  <li>
-    <button class="collapsible">The Fat Cat</button>
-    <div class="pub-details">
-      <p>Victorian pub with wood panel bar and walled garden, acclaimed for its real ales brewed on site.</p>
-      <a href="fat-cat.html" aria-label="Details for The Fat Cat">Details</a>
-    </div>
-  </li>
-</ul>
-
+    <ul class="pub-list">
+      <li>
+        <h2>Gardeners Rest</h2>
+        <p>Owned by community members, this easygoing pub hosts live music & offers pints.</p>
+        <a href="gardenersrest.html" aria-label="Details for Gardeners Rest">Details</a>
+      </li>
+      <li>
+        <h2>Shakespears</h2>
+        <p>Traditional pub with a beer garden, for regular live music plus interesting real ales and beers.</p>
+        <a href="shakespears.html" aria-label="Details for Shakespears">Details</a>
+      </li>
+      <li>
+        <h2>The Blake Hotel</h2>
+        <p>This community pub reopened as a free house in 2010 after seven years of closure. Extensively restored, it has many Victorian features.</p>
+        <a href="blake-hotel.html" aria-label="Details for The Blake Hotel">Details</a>
+      </li>
+      <li>
+        <h2>Kelham Island Tavern</h2>
+        <p>Pub with carved wooden bar, tiled floors, leafy beer garden and renowned range of real ales.</p>
+        <a href="kelham-island-tavern.html" aria-label="Details for Kelham Island Tavern">Details</a>
+      </li>
+      <li>
+        <h2>The Fat Cat</h2>
+        <p>Victorian pub with wood panel bar and walled garden, acclaimed for its real ales brewed on site.</p>
+        <a href="fat-cat.html" aria-label="Details for The Fat Cat">Details</a>
+      </li>
+    </ul>
 
 
 
@@ -103,16 +92,6 @@ referrerpolicy="no-referrer-when-downgrade">
     window.scrollTo({ top: 0, behavior: 'smooth' });
     document.querySelector('header h1').focus();
   }
-
-  // Collapsible behavior on mobile
-  document.querySelectorAll('.collapsible').forEach(button => {
-    button.addEventListener('click', () => {
-      const li = button.closest('li');
-      li.classList.toggle('active');
-    });
-  });
-
-  
 </script>
 
 </html>
