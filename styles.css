@@ -104,7 +104,7 @@ h2 {
   header h1 {
     font-size: 1.8rem;
   }
-
+}
   .content-wrapper {
     padding: 1rem;
   }
@@ -176,6 +176,9 @@ h2 {
   border-radius: 0 0 8px 8px;
   font-size: 1rem;
   line-height: 1.5;
+  display: none;
+}
+.pub-list li.active .pub-details {
   display: block;
 }
 
@@ -187,5 +190,4 @@ h2 {
   .pub-list li.active .pub-details {
     display: block;
   }
-}
 }
