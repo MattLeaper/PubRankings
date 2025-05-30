@@ -132,3 +132,38 @@ h2 {
   }
 }
 
+/* Collapsible button */
+.collapsible {
+  background-color: #f7f7f7;
+  color: #333;
+  cursor: pointer;
+  padding: 0.75rem 1rem;
+  width: 100%;
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.collapsible:hover {
+  background-color: #e0e0e0;
+}
+
+.pub-details {
+  padding: 0 1rem;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .pub-details {
+    display: none;
+    padding-top: 0.5rem;
+  }
+
+  .pub-list li.active .pub-details {
+    display: block;
+  }
+}
