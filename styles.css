@@ -50,6 +50,21 @@ iframe {
   border-radius: 10px;
 }
 
+.emoji {
+  display: inline-block;
+  margin-left: 10px;
+  animation: shake 1s ease-in-out 2; 
+  transform-origin: center;
+  font-size: 1.2em;
+}
+.emoji:hover {
+  animation: shake 1s ease-in-out 2; 
+}
+
+.slideinfromleft {
+  animation: slideinfromleft 0.5s ease-in-out forwards;
+}
+
 @media (max-width: 600px) {
   .iframe-container {
     height: 800px; 
@@ -65,20 +80,7 @@ iframe {
   100% { transform: rotate(0deg); }
 }
 
-.emoji {
-  display: inline-block;
-  margin-left: 10px;
-  animation: shake 1s ease-in-out 2; 
-  transform-origin: center;
-  font-size: 1.2em;
-}
-.emoji:hover {
-  animation: shake 1s ease-in-out 2; 
-}
 
-.slideinfromleft {
-  animation: slideinfromleft 0.5s ease-in-out forwards;
-}
 
 
 @keyframes slideinfromleft {
