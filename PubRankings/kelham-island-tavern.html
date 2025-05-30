@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <title>Kelham Island Tavern - Sheffield Pubs</title>
+</head>
+<body>
+  <main>
+    <h1><span class="emoji" aria-label="beer emoji">🍺</span>Kelham Island Tavern<span class="emoji" aria-label="beer emoji">🍺</span></h1>
+    <p>Pub with carved wooden bar, tiled floors, leafy beer garden and renowned range of real ales.</p>
+    <img src="kelham_island_tavern.jpg" alt="Kelham Island Tavern" />
+    <p><strong>Address:</strong> 62 Russell St, Sheffield S3 8RW</p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5422.020597904357!2d-1.4770948428798851!3d53.38812870040319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4879787c3eded8a5%3A0xeebe2a1c192ece9c!2sKelham%20Island%20Tavern!5e1!3m2!1sen!2suk!4v1748609281335!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <p><a href="index.html">← Back to Top Pubs</a></p>
+  </main>
+</body>
+<script>
+  document.querySelectorAll('.emoji').forEach(emoji => {
+    emoji.addEventListener('mouseenter', () => {
+      emoji.style.animation = 'none';
+      emoji.offsetHeight; // force reflow
+      emoji.style.animation = 'shake 1s ease-in-out 2';
+    });
+  });
+
+</script>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sheffield Pubs Top 5</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Ensure all images use lazy loading -->
+</head>
+<body>
+  <header>
+    <h1><span class="emoji" aria-label="beer emoji">🍺</span>Top 5 Sheffield Pubs <span class="emoji" aria-label="beer emoji">🍺</span></h1>
+  </header>
+
+  
+<div class="content-wrapper">
+<div class="iframe-container">
+    <p style="max-width:600px; margin: 0 auto 40px auto; font-style: italic; text-align:center; color:#666;">
+    Please note this list is entirely based on my own opinion.
+</p>
+<iframe
+src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQx-CzF7xl3PMSnJgJkWJY-nMcm3jiGZpJiDvH_xLSO1ANTD47hr0YboNu9L3RhzDW78LkK2aWaMZ8Y/pubhtml?widget=true&headers=false"
+width="100%"
+height="600"
+frameborder="0"
+scrolling="yes"
+allowfullscreen
+loading="lazy"
+referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+</div>
+  <main class="top5">
+    <h2>Top 5 Sheffield Pubs</h2>
+    <ul class="pub-list">
+      <li>
+        <h2>Gardeners Rest</h2>
+        <p>Owned by community members, this easygoing pub hosts live music & offers pints.</p>
+        <a href="gardenersrest.html" aria-label="Details for Gardeners Rest">Details</a>
+      </li>
+      <li>
+        <h2>Shakespears</h2>
+        <p>Traditional pub with a beer garden, for regular live music plus interesting real ales and beers.</p>
+        <a href="shakespears.html" aria-label="Details for Shakespears">Details</a>
+      </li>
+      <li>
+        <h2>The Blake Hotel</h2>
+        <p>This community pub reopened as a free house in 2010 after seven years of closure. Extensively restored, it has many Victorian features.</p>
+        <a href="blake-hotel.html" aria-label="Details for The Blake Hotel">Details</a>
+      </li>
+      <li>
+        <h2>Kelham Island Tavern</h2>
+        <p>Pub with carved wooden bar, tiled floors, leafy beer garden and renowned range of real ales.</p>
+        <a href="kelham-island-tavern.html" aria-label="Details for Kelham Island Tavern">Details</a>
+      </li>
+      <li>
+        <h2>The Fat Cat</h2>
+        <p>Victorian pub with wood panel bar and walled garden, acclaimed for its real ales brewed on site.</p>
+        <a href="fat-cat.html" aria-label="Details for The Fat Cat">Details</a>
+      </li>
+    </ul>
+
+
+
+
+
+  </main>
+</body>
+<script>
+  // Add shake animation on hover to all beer emojis
+  document.querySelectorAll('.emoji').forEach(emoji => {
+    emoji.addEventListener('mouseenter', () => {
+      emoji.style.animation = 'none';
+      emoji.offsetHeight; // force reflow
+      emoji.style.animation = 'shake 1s ease-in-out 2';
+    });
+  });
+
+  // Scroll to pub detail on button click
+  document.querySelectorAll('.pub-list button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const targetId = btn.getAttribute('data-target');
+      const section = document.getElementById(targetId);
+      if (section) {
+        section.focus();
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    document.querySelector('header h1').focus();
+  }
+</script>
+
+</html>
